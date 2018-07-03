@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/jhkim/Desktop/Example1/build/Debug-iphoneos/FaceAware/FaceAware.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/jhkim/Desktop/Example1/build/Pods.build/Debug-iphoneos/FaceAware.build/unextended-module.modulemap',
+    }]
+  }]
+}

@@ -1,0 +1,11 @@
+framework module FaceAware {
+  umbrella header "FaceAware.h"
+
+  export *
+  module * { export * }
+}
+
+module FaceAware.Swift {
+    header "FaceAware-Swift.h"
+    requires objc
+}

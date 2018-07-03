@@ -1,0 +1,16 @@
+PODS:
+  - FaceAware (1.4.0)
+
+DEPENDENCIES:
+  - FaceAware
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FaceAware
+
+SPEC CHECKSUMS:
+  FaceAware: 94410295a219c4a397ce525eab0063d6b17258aa
+
+PODFILE CHECKSUM: 75fecccf68fb1d88a56e628374838cbab49e8487
+
+COCOAPODS: 1.5.3

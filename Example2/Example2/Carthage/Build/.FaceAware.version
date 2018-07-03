@@ -1,0 +1,18 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "1.4.1",
+  "iOS" : [
+    {
+      "name" : "FaceAware",
+      "hash" : "f1989ea856e69133af9461ec22744d061b7372c059f2543ab115eb21b1386aa8"
+    }
+  ]
+}

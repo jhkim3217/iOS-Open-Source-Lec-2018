@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImageLoader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgY-eb-aH9">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Sync" id="NvT-Tm-6Az">
+                                        <connections>
+                                            <action selector="handleSync:" destination="BYZ-38-t0r" id="bs1-lQ-lJc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Task" id="7aY-Xz-jBo">
+                                        <connections>
+                                            <action selector="handleTask:" destination="BYZ-38-t0r" id="jWT-tc-aVd"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="GCD" id="I95-eK-2os">
+                                        <connections>
+                                            <action selector="handleGCD:" destination="BYZ-38-t0r" id="6aA-WR-LAP"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Kingfisher" id="j0N-0D-6JV">
+                                        <connections>
+                                            <action selector="handleKingfisher:" destination="BYZ-38-t0r" id="Lff-RL-wyr"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" id="nNC-6Q-DH7">
+                                        <slider key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="z5Y-ep-mEk">
+                                            <rect key="frame" x="259" y="5" width="100" height="34"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </slider>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dA0-Oy-b3C">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dA0-Oy-b3C" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LDV-qK-PWj"/>
+                            <constraint firstItem="dA0-Oy-b3C" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="LNI-Aw-CVm"/>
+                            <constraint firstItem="dgY-eb-aH9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="OiF-8b-NP1"/>
+                            <constraint firstItem="dgY-eb-aH9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Vbk-SG-j27"/>
+                            <constraint firstItem="dgY-eb-aH9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Y5a-Dt-tUQ"/>
+                            <constraint firstItem="dA0-Oy-b3C" firstAttribute="top" secondItem="dgY-eb-aH9" secondAttribute="bottom" id="bov-0Q-a28"/>
+                            <constraint firstItem="dA0-Oy-b3C" firstAttribute="top" secondItem="dgY-eb-aH9" secondAttribute="bottom" id="f5c-cm-Igg"/>
+                            <constraint firstItem="dA0-Oy-b3C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="khg-te-ZlT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="dA0-Oy-b3C" id="Sap-mD-pGR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-614" y="52"/>
+        </scene>
+    </scenes>
+</document>
